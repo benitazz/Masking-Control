@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-4 control-label">Quantity:</label>
+      <div class="col-sm-8">
+        <app-mask-input-control [(ngModel)]="quantity" [maskType]="integer"></app-mask-input-control>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label">Price:</label>
+      <div class="col-sm-8">
+        <app-mask-input-control [UnitMeasureType]="unitMeaseure" [unitMeasureValue]="'R'" [(ngModel)]="price" [maskType]="decimal"></app-mask-input-control>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label">Total:</label>
+      <div class="col-sm-8">
+        <app-total-input-control [unitMeasureValue]="'R'" [x]="quantity" [y]="price" [calculationType]="calculationType"></app-total-input-control>
+      </div>
+    </div>
+
+    <div>
+      <button type="submit" (click)="testValue()"> Output the maksed Value</button>
+    </div>
+
+    <div>
+      Converted Price: {{price}}
+      Quantity: {{quantity}}
+    </div>
+  </div>
+</div>

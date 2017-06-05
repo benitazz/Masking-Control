@@ -1,0 +1,5 @@
+<div [ngClass]="{'input-group': this.canApplyStyle}">
+  <span *ngIf="lefRight.Left === UnitMeasureType" class="input-group-addon">{{unitMeasureValue}}</span>
+  <input type="text" [(ngModel)]="innerValue" class="form-control" [textMask]="{mask: mask}" [disabled]="isreadOnly" />
+  <span *ngIf="lefRight.Right === UnitMeasureType"  class="input-group-addon">{{unitMeasureValue}}</span>
+</div>
