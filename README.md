@@ -1,6 +1,7 @@
 # MaskingApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+The purpose of this project is to demonstrate the custom masking control in Angular 2, this is just a prototype.
 
 ## Development server
 
