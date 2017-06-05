@@ -11,8 +11,8 @@ import { UnitMeasure } from '../unit-measure.enum';
 })
 export class TotalInputControlComponent implements OnInit {
 
-  public xx: any;
-  public yy: any;
+  public xx: number;
+  public yy: number;
 
   public UnitMeasure: UnitMeasure;
 
@@ -43,12 +43,6 @@ export class TotalInputControlComponent implements OnInit {
 
     this.xx = !this.xx ? 0 : this.xx;
     this.yy = !this.yy ? 0 : this.yy;
-
-    const xString = this.xx.toString().replace(/\s/g, '');
-    const yString = this.yy.toString().replace(/\s/g, '');
-
-    this.xx = Number(xString);
-    this.yy = Number(yString);
 
     switch (this.calculationType) {
       case CalculationType.Addition: {
