@@ -5,6 +5,18 @@ The purpose of this project is to demonstrate the custom masking control in Angu
 
 This extend on https://www.npmjs.com/package/text-mask-addons and https://www.npmjs.com/package/angular2-text-mask by creating a custom control to do display the masking and getting the un-masked value on the binding. For example the control might display the masking value  for thousand seperator like this '6 900' but the actual value that you retrieve from the control will be a number without spacing '6900'. 
 
+# Properties of the Control
+  isreadOnly - this is a boolean property to tell control if it is disabled or enabled, Default is enabled.
+  maskType - this is the custom to tell the control the control which maksing to use. The Enum can be extended according to your needs
+             Current Enum:
+                    export enum MaskType {
+                              Integer,
+                              Decimal,
+                              Phone,
+                              Date,
+                              BirthDay
+                          }               
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
