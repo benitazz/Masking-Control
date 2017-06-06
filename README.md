@@ -10,7 +10,8 @@ This extend on https://www.npmjs.com/package/text-mask-addons and https://www.np
   
   maskType - this is the custom to tell the control the control which maksing to use. The Enum can be extended according to your needs.
   
-             Current Enum:
+  Here is an example of the current enum:
+  
                     export enum MaskType {
                               Integer,
                               Decimal,
