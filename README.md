@@ -7,7 +7,9 @@ This extend on https://www.npmjs.com/package/text-mask-addons and https://www.np
 
 # Properties of the Control
   isreadOnly - this is a boolean property to tell control if it is disabled or enabled, Default is enabled.
-  maskType - this is the custom to tell the control the control which maksing to use. The Enum can be extended according to your needs
+  
+  maskType - this is the custom to tell the control the control which maksing to use. The Enum can be extended according to your needs.
+  
              Current Enum:
                     export enum MaskType {
                               Integer,
