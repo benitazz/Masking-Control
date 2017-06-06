@@ -3,6 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 The purpose of this project is to demonstrate the custom masking control in Angular 2, this is just a prototype.
 
+This extend on https://www.npmjs.com/package/text-mask-addons and https://www.npmjs.com/package/angular2-text-mask by creating a custom control to do display the masking and getting the un-masked value on the binding. For example the control might display the masking value  for thousand seperator like this '6 900' but the actual value that you retrieve from the control will be a number without spacing '6900'. 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
